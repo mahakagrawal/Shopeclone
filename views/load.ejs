@@ -1,0 +1,35 @@
+<% if(products.length>0){%>
+    <% products.forEach(function(product){ %>
+        <div class="col-3" style="padding-left: 8px;padding-right: 8px;margin-bottom: 30px;">
+            <div class="card" style="height: 400px; width:100%;">
+                <center>
+                    <img src="assets/productImg/<%= product.src %>" class="card-img-top" alt="..." style="padding: 30px;height: 250px;width:min-content; max-width: 100%;">
+                </center>
+                    <div class="card-body justify-content-center">
+                        <h5 class="card-title" style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;"> <%= product.title %> </h5>
+                        <ul class="list-group list-group-flush" style="list-style: none;">
+                            <li class="list-item" style="text-align: center;">Price: ₹<%= product.price %></li>
+                            <li class="list-item" style="text-align: center;">
+                                <button class="btn btn-link" id="<%= product.id %>" onclick="window.func('<%= product.id %>')">View</button>
+                   
+                            </li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    <% }) %>
+    <!--<% products.forEach(function(products){ %>
+        <div style="width: 200px; height:230px;margin-bottom: 50px;padding:20px;border:1px solid black;margin-left:10px;margin-right: 10px;">
+            <img style="max-height: 100px;max-width: 140px;" src="assets/productImg/<%= products.src %>"/>
+            <h5 style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;"> <%= products.title %> </h5>
+            <center><a href="#">Price ₹ <%= products.price %></a></center>
+            <div id='desc<%=products.id%>'></div>
+            <button class="button btn btn-primary" id="<%= products.id %>" onclick="window.func('<%= products.id %>')">View</button>
+        </div>
+    <% }) %>-->
+<% }else{%>
+    <div class="row" style="text-align: center;">
+        No more products to be displayed
+    </div>
+<% } %>

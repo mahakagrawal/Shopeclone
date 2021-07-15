@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Product | NodeJS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/login.css">
+    </head>
+    <body>
+        <h1 style="text-align: center;letter-spacing: -1px;font-family: system-ui;">Shopeclone<span style="font-size: 16px;
+            letter-spacing: 0px;
+            padding-left: 3px;
+            color: black;
+            font-style: 400;
+            font-weight: 400;">.in</span></h1>
+        <div class="container" style="height: 470px;">
+            <div class="box">
+            <h1 class="h1-sign">Add Product</h1>
+            <form method="post" action="/add_product" enctype="multipart/form-data">
+                <div class="a-row">
+                    <label>Title</label>
+                   <input type="text" id="text" name="title" placeholder="Enter title" required>
+                </div>
+                <div class="a-row">
+                    <label>Description</label>
+                    <input type="text" id="desc" name="desc" placeholder="Enter Description" required>
+                 </div>
+                 <div class="a-row">
+                    <label>Stock</label>
+                    <input type="text" id="stock" name="stock" placeholder="Enter Stock" required>
+                 </div>
+                 <div class="a-row">
+                    <label>Price</label>
+                    <input type="text" id="price" name="price" placeholder="Enter Price" required>
+                 </div>
+                 <div class="a-row">
+                    <label>Image</label>
+                    <input type="file" id="file" name="productimg" required>
+                 </div>
+                 <button type="submit" id="button" name="add" value="add" class="button-sign">Add Product</button>
+            </form>
+        </div>
+        </div>
+        <div class="divider">
+            <h5>See Product?</h5>
+        </div>
+        <div>
+            <center><a class="button" href="/product">See Product</a></center>
+        </div>
+        <div class="below-divider"></div>
+        
+        <div class="inline-area" style="color: #555!important;">© 1996-2021, Shopeclone.com, Inc. or its affiliates</div>
+    </body>
+</html>

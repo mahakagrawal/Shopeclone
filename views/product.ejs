@@ -1,0 +1,48 @@
+<%- include('header.ejs') %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome | Account LoggedIn Successfully | NodeJS</title>
+        <style>
+        .lab{
+            font-weight:Bold;
+            margin-top:10px;
+        }
+        .btn-primary {
+            color: #fff !important;
+            background-color: rgb(0 0 0 / 50%) !important;
+            border-color: #555555 !important;
+            line-height: 1 !important;
+        }
+        .box{
+            height:230px;width: 200px;margin-bottom: 50px;padding:20px;border:1px solid black;margin-left:10px;margin-right: 10px;
+        }
+        </style>
+        <script src="assets/js/verify.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div style="margin-top:100px;" class="container">
+            <center><h2 style="margin-top:20px;">Add new Products:<a href="/add_product">Click Here</a></h2></center><br><br>    
+            <center><h2 style="margin-top:20px;">Products:</h2></center><br>
+                <center>
+                <div id="product" style="display: flex; flex-wrap: wrap;justify-content: center;">
+                        <% products.forEach(function(product){ %>
+                           <div class="box">
+                               <img style="max-height: 100px;max-width: 140px;" src="assets/productImg/<%= product.src %>"/>
+                               <h5 style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;"> <%= product.title %> </h5>
+                               <center><a href="#">Price ₹ <%= product.price %></a></center>
+                               <div id='desc<%=product.id%>'></div>
+                               <button class="button btn btn-primary" id="<%= product.id %>" onclick="window.func('<%= product.id %>')">View</button>
+                               <a class="button btn btn-primary" href="/update?id=<%=product.id%>">Update</a>
+                               <button class="button btn btn-primary" onclick="window.delete('<%= product.id %>')">Delete</button>
+                            </div>
+                        <% }) %>
+                        
+                </div>
+            </center><br><br>
+        </div>
+          <script src="assets/js/load-script.js"></script>
+        <script src="assets/js/product-script.js"></script>
+    </body>
+</html>

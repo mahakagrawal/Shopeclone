@@ -1,0 +1,1 @@
+[{"username":"er.mahak2001@gmail.com","password":"123","fullname":"Mahak Agrawal","is_admin":true,"is_verified":true,"verification_key":"5091"},{"username":"agarwal.vishnu52@gmail.com","password":"123","fullname":"Mahak Agrawal","is_admin":true,"is_verified":true,"verification_key":"5081"}]

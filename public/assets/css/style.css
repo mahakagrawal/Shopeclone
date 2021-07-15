@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header-nav{
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1 1 auto;
+    background-color: #232f3e;
+    top: 0;
+    left: 0;
+    z-index: 198;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1em;
+    display: block;
+    zoom: 1;
+    min-width: 1000px;
+    height:99px;
+}
+.nav{
+    display: flex;
+    position: static;
+    float: none;
+}
+.upper-nav{
+    background-color: #131921;
+    flex-flow: row nowrap;
+    height: 60px;
+    width: 100%;
+    font-size: 14px;
+    z-index: 5;
+    line-height: 1em;
+}
+.left-nav{
+    height: 60px;
+    width:auto;
+}
+.nav-logo{
+    margin-left: 10px;
+    width: auto;
+    padding: 4px 0 0 0;
+    height: 100%;
+    line-height: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    position: relative;
+    float: none;
+    flex-shrink: 0;
+}
+.h2-logo{
+    margin-top: 12px;
+    line-height: 20px;
+    pointer-events: none;
+    width: 128.73px;
+    font-weight: 600;
+    height: 30px;
+    color: whitesmoke;
+    font-family: system-ui;
+    padding: 2px 6px;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+}
+.nav-span{
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-family: inherit;
+}
+.nav-location{
+    text-decoration: none;
+    width: auto;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    margin-left: 3px;
+    overflow: hidden;
+}
+.nav-loc-icon{
+    margin-top: 25px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.nav-loc-text{
+    margin-left: 3px;
+    margin-top: 15px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+}
+.nav-lbl-txt{
+    color: #ccc;
+    font-size: 12px;
+}
+.nav-lbl-loc{
+    font-weight: 700;
+    font-size: 14px;
+}
+.nav-search{
+    padding: 10px 4px 10px 3px;
+    margin: 0 10px;
+    left:0;
+    right:0;
+    width:auto;
+    height: 60px;
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.nav-form{
+    flex: 1 1 0px;
+    height:40px;
+    margin-bottom: 0;
+    border:4px 4px 4px 4px;
+    margin-top: 0em;
+    white-space:nowrap;
+    font-size: 14px;
+}
+.nav-search-left,.nav-search-right{
+    position: relative;
+    float: left;
+    cursor: default;
+    top: -0.515;
+    height: 40px;
+    margin: 0;
+    padding-left: 5px;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px 0 0 4px;
+    background-position: 0 -532px;
+    background-repeat: repeat-x;
+    background-color: #f3f3f3;
+    border-left-color: #dadada;
+    border-top-color: #dadada;
+    border-bottom-color: #dadada;
+}
+.right{
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #febd69;
+    background-color: #febd69;
+    width:43px;
+    border-left-color: #febd69;
+    border-top-color: #febd69;
+    border-bottom-color: #febd69;
+}
+.nav-icon-right{
+    font-size: 1.3rem;
+    margin: 10px auto;
+    color: #000000ba;
+}
+.nav-all{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #555;
+    font-size: 14px;
+    line-height: 39px;
+    margin-right: 21px;
+    margin-left: 5px;
+    min-width: 19px;
+}
+.nav-icon-all{
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #666;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.nav-entry{
+    border: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    height: 40px;
+    background: #fff;
+    width: 552;
+}
+.nav-input{
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    line-height: 15px;
+    padding: 7px 10px 10px 0;
+    margin: 0;
+    border: 0;
+    height: 38px;
+    font-family: inherit;
+    font-size: 15px;
+    background: 0 0;
+    color: #111;
+    outline: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    text-indent: 8px;
+    direction: ltr;
+    border-radius: 3px;
+}
